@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082487511536",
+    "project_id": "proyecto-moviles-b460c",
+    "storage_bucket": "proyecto-moviles-b460c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082487511536:android:0bcec2af81fd8a8af72535",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOD-Qlv2L5L6soBDxZNvpHD-Ax4ZRA7y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
