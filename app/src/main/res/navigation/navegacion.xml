@@ -42,6 +42,23 @@
         android:id="@+id/principalFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.PrincipalFragment"
         android:label="fragment_principal"
-        tools:layout="@layout/fragment_principal" />
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.CarritoFragment"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
 
 </navigation>

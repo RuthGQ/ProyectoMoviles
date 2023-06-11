@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.fragment.findNavController
 import com.example.proyectomovil.R
 import com.example.proyectomovil.databinding.FragmentLoginBinding
 import com.example.proyectomovil.databinding.FragmentPrincipalBinding
@@ -18,9 +19,9 @@ import com.google.android.material.navigation.NavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 //@AndroidEntryPoint
-class PrincipalFragment : Fragment(R.layout.fragment_principal) {
+class PrincipalFragment : Fragment() {
 
-    private var _binding : FragmentPrincipalBinding? = null
+    private var _binding: FragmentPrincipalBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -30,13 +31,23 @@ class PrincipalFragment : Fragment(R.layout.fragment_principal) {
     ): View? {
         _binding = FragmentPrincipalBinding.inflate(inflater, container, false)
         return binding.root
+
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnMenu.setOnClickListener{
+            val action = PrincipalFragmentDirections.actionPrincipalFragmentToMenuFragment()
+            findNavController().navigate(action)
+        }
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-
-
 
 
 }

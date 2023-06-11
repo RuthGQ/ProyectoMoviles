@@ -8,11 +8,188 @@
     android:fitsSystemWindows="false"
     tools:context=".ui.view.fragment.PrincipalFragment">
 
-    <com.google.android.material.navigation.NavigationView
+    <ImageButton
+        android:id="@+id/btn_menu"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:headerLayout="@layout/header_navigation_drawer"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="673dp"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="674dp"
+        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="44dp"
+        android:text="¿ Que vas a celebrar ?"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <ImageButton
+        android:id="@+id/btn_cena"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="27dp"
+        android:src="@drawable/ic_baseline_arrow_circle_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="110dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="272dp"
+        android:src="@drawable/cena"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/cumpleanos"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="109dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/graduacion"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.051"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="110dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/mas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageButton
+        android:id="@+id/btn_cumpleaños"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/ic_baseline_arrow_circle_right_24"
+        app:layout_constraintBottom_toTopOf="@+id/btn_graduacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cena"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btn_graduacion"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="78dp"
+        android:src="@drawable/ic_baseline_arrow_circle_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <ImageButton
+        android:id="@+id/btn_otro"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="27dp"
+        android:src="@drawable/ic_baseline_arrow_circle_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="52dp"
+        android:text="Cena Romantica"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cena"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="68dp"
+        android:text="Cumpleaños"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cumpleaños"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="102dp"
+        android:text="Graduación"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/btn_graduacion"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="43dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="128dp"
+        android:text="Otro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_otro"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
       
