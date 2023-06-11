@@ -1,16 +1,21 @@
 <resources>
     <string name="app_name">ProyectoMovil</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
     <string name="title_active_login">Iniciar Sesión para continuar</string>
     <string name="title_create">Crear una nueva cuenta</string>
     <string name="password">Contraseña</string>
-    <string name="new_password">Nueva contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="telefono">Telefono</string>
     <string name="current_password">Contraseña actual</string>
-    <string name="name">Nombre completo</string>
-    <string name="email">Email</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="usuario">Usuario</string>
+    <string name="loguearse">Loguearse</string>
     <string name="login">Ingresar</string>
     <string name="repeat_password">Confirma la contraseña</string>
-    <string name="signup">Sign Up</string>
+    <string name="signup">Registrarse</string>
     <string name="si_tengo">Iniciar Sesión</string>
     <string name="crear_cuenta">No tienes cuenta?</string>
     <string name="cuenta_existente">Si tienes cuenta?</string>
@@ -34,4 +39,15 @@
     <string name="subtitle_delete_account">Por motivos de seguridad para eliminar tu cuenta por completo, debes de ingresar tu contraseña.</string>
     <string name="delete">Eliminar</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

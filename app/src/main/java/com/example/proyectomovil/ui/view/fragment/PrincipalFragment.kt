@@ -1,37 +1,44 @@
-package com.example.proyectomovil
+package com.example.proyectomovil.ui.view.fragment
 
 import android.content.res.Configuration
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
 import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.proyectomovil.databinding.ActivityMainBinding
+import com.example.proyectomovil.R
+import com.example.proyectomovil.databinding.FragmentLoginBinding
+import com.example.proyectomovil.databinding.FragmentPrincipalBinding
 import com.google.android.material.navigation.NavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 //@AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class PrincipalFragment : Fragment(R.layout.fragment_principal) {
 
-    /*private lateinit var drawerLayout: DrawerLayout
+    private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
-    private lateinit var toggle: ActionBarDrawerToggle*/
+    private lateinit var toggle: ActionBarDrawerToggle
+
+    private var _binding : FragmentPrincipalBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        _binding = FragmentPrincipalBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    Log.i("Inicio","Empezandooo")
-
-    binding = ActivityMainBinding.inflate(layoutInflater)
-
-    setContentView(binding.root)
-
-
-
-        /*drawerLayout = findViewById(R.id.drawer_layout)
+    /*    drawerLayout = findViewById(R.id.drawer_layout)
 
 
         setSupportActionBar(findViewById(R.id.toolbar))
@@ -47,10 +54,6 @@ class MainActivity : AppCompatActivity() {
             R.string.navigation_drawer_close
         )
         drawerLayout.addDrawerListener(toggle)
-
-
-
-
 
 
         val navigationView = findViewById<NavigationView>(R.id.nav_view)
@@ -126,9 +129,10 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             else -> super.onOptionsItemSelected(item)
-        }
-*/
+        }*/
+    }
 
-}
+
+
 
 }
