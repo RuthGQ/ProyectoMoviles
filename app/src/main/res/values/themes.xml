@@ -16,10 +16,12 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
     </style>
+
     <style name="MaterialAlertDialog__Center" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="materialAlertDialogTitlePanelStyle">@style/Title.Panel.Center</item>
         <item name="materialAlertDialogBodyTextStyle">@style/Message.Center</item>
     </style>
+
     <style name="Title.Panel.Center" parent="MaterialAlertDialog.MaterialComponents.Title.Panel">
         <item name="android:gravity">center_horizontal</item>
     </style>
@@ -28,11 +30,13 @@
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textSize">20sp</item>
     </style>
+
     <style name="Theme.ProyectoMovil.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.ProyectoMovil.AppBarOverlay"
-        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ProyectoMovil.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.ProyectoMovil.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
