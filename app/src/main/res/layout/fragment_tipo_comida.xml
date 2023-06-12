@@ -30,5 +30,36 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="175dp">
 
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="158dp"
+            android:layout_height="139dp"
+            android:src="@drawable/japonesa"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="161dp"
+            android:layout_height="138dp"
+            android:src="@drawable/italiana"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="158dp"
+            android:layout_height="134dp"
+            android:src="@drawable/mediterranea"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="63dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="160dp"
+            android:layout_height="131dp"
+            android:src="@drawable/mexicana"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="66dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
