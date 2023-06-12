@@ -6,124 +6,160 @@
     android:layout_height="match_parent"
     tools:context=".ui.view.fragment.MenuFragment">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="119dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginEnd="167dp"
-        android:text="RUTH MERY"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="41dp"
-        android:text="rg02192004@gmail.com"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="280dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="368dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="16dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="417dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="54dp"
         android:layout_marginBottom="5dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#8C1212"
-        android:text="Perfil"
-        android:textColor="#B30404"
-        android:textColorLink="#00FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="357dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="10dp"
-        android:background="#00FFFFFF"
-        android:text="Metodos de pago"
-        android:textColor="#C80F0F"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="187dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="366dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="7dp"
-        android:background="#00FFFFFF"
-        android:text="Direcciones"
-        android:textColor="#DF0A0A"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="166dp"
+            android:layout_marginEnd="166dp"
+            android:text="RUTH MERY"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="366dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="3dp"
-        android:background="#00FFFFFF"
-        android:text="Notificaciones"
-        android:textColor="#E60909"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="127dp"
+            android:layout_marginBottom="15dp"
+            android:text="rg02192004@gmail.com"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="357dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="185dp"
-        android:background="#00FFFFFF"
-        android:text="Preguntas Frecuentes"
-        android:textColor="#F40A0A"
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_regresarPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="349dp"
+            android:layout_marginBottom="229dp"
+            android:clickable="true"
+            android:src="@drawable/baseline_keyboard_return_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="410dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="368dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#8C1212"
+            android:text="Perfil"
+            android:textColor="#B30404"
+            android:textColorLink="#00FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="357dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:text="Metodos de pago"
+            android:textColor="#C80F0F"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="366dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="9dp"
+            android:background="#00FFFFFF"
+            android:text="Direcciones"
+            android:textColor="#DF0A0A"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:text="Notificaciones"
+            android:textColor="#E60909"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="357dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="76dp"
+            android:background="#00FFFFFF"
+            android:text="Preguntas Frecuentes"
+            android:textColor="#F40A0A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,16 +49,44 @@
         <action
             android:id="@+id/action_principalFragment_to_carritoFragment"
             app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_cantidadFragment"
+            app:destination="@id/cantidadFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
     <fragment
         android:id="@+id/carritoFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.CarritoFragment"
         android:label="fragment_carrito"
         tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/cantidadFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.CantidadFragment"
+        android:label="fragment_cantidad"
+        tools:layout="@layout/fragment_cantidad" >
+        <action
+            android:id="@+id/action_cantidadFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+        <action
+            android:id="@+id/action_cantidadFragment_to_comidaFragment"
+            app:destination="@id/comidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comidaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.ComidaFragment"
+        android:label="fragment_comida"
+        tools:layout="@layout/fragment_comida" >
+        <action
+            android:id="@+id/action_comidaFragment_to_cantidadFragment"
+            app:destination="@id/cantidadFragment" />
+    </fragment>
 
 </navigation>

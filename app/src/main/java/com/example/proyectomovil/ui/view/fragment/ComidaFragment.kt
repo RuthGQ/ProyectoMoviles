@@ -7,30 +7,34 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.proyectomovil.R
-import com.example.proyectomovil.databinding.FragmentMenuBinding
+import com.example.proyectomovil.databinding.FragmentComidaBinding
 
 
-class MenuFragment : Fragment() {
+class ComidaFragment : Fragment() {
 
-    private var _binding : FragmentMenuBinding? = null
-    private val binding get()=_binding!!
+    private var _binding: FragmentComidaBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMenuBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        _binding = FragmentComidaBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnRegresarPrincipal.setOnClickListener {
-            val action = MenuFragmentDirections.actionMenuFragmentToPrincipalFragment()
+        binding.btnRegresar.setOnClickListener {
+            var action = ComidaFragmentDirections.actionComidaFragmentToCantidadFragment()
             findNavController().navigate(action)
-
         }
     }
-
 }

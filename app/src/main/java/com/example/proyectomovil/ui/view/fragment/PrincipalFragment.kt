@@ -43,6 +43,18 @@ class PrincipalFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.btnCarrito.setOnClickListener {
+            val action = PrincipalFragmentDirections.actionPrincipalFragmentToCarritoFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.btnCena.setOnClickListener {
+            val action = PrincipalFragmentDirections.actionPrincipalFragmentToCantidadFragment()
+            findNavController().navigate(action)
+        }
+
+
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
