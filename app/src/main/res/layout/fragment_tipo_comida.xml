@@ -8,58 +8,123 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/btn_regresar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:src="@drawable/baseline_keyboard_return_24"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="53dp" />
+        tools:layout_editor_absoluteY="53dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
         android:text="¿ Qué buscas comer ?"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="126dp" />
+        android:textSize="34sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="122dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="555dp"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="175dp">
+        tools:layout_editor_absoluteY="175dp"
+        tools:ignore="MissingConstraints">
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="158dp"
-            android:layout_height="139dp"
-            android:src="@drawable/japonesa"
-            tools:layout_editor_absoluteX="223dp"
-            tools:layout_editor_absoluteY="268dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="132dp"
+            android:layout_height="129dp"
+            app:cardCornerRadius="50dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="46dp" >
 
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="161dp"
-            android:layout_height="138dp"
-            android:src="@drawable/italiana"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="268dp" />
+            <ImageButton
+                android:id="@+id/btn_mediterranea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mediterranea" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="158dp"
-            android:layout_height="134dp"
-            android:src="@drawable/mediterranea"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="63dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="160dp"
-            android:layout_height="131dp"
-            android:src="@drawable/mexicana"
+        <androidx.cardview.widget.CardView
+            android:layout_width="132dp"
+            android:layout_height="129dp"
+            app:cardCornerRadius="50dp"
             tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="66dp" />
+            tools:layout_editor_absoluteY="46dp">
+
+            <ImageButton
+                android:id="@+id/btn_mexicana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mexicana" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="132dp"
+            android:layout_height="129dp"
+            app:cardCornerRadius="50dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="267dp">
+
+            <ImageButton
+                android:id="@+id/btn_italiana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/italiana" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="132dp"
+            android:layout_height="129dp"
+            app:cardCornerRadius="50dp"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="267dp">
+
+            <ImageButton
+                android:id="@+id/btn_japonesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/japonesa" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mediterranea"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mexicana"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="253dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Italiana"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japonesa"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="252dp"
+            tools:layout_editor_absoluteY="397dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

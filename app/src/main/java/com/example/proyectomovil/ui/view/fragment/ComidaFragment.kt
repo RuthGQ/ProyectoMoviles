@@ -36,5 +36,10 @@ class ComidaFragment : Fragment() {
             var action = ComidaFragmentDirections.actionComidaFragmentToCantidadFragment()
             findNavController().navigate(action)
         }
+
+        binding.btnAlmuerzo.setOnClickListener {
+            var action = ComidaFragmentDirections.actionComidaFragmentToTipoComidaFragment()
+            findNavController().navigate(action)
+        }
     }
 }

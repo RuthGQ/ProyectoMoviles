@@ -5,9 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.proyectomovil.R
+import com.example.proyectomovil.databinding.FragmentTipoComidaBinding
 
 class TipoComidaFragment : Fragment() {
+
+    private var _binding : FragmentTipoComidaBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +24,20 @@ class TipoComidaFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tipo_comida, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnRegresar3.setOnClickListener {
+            var action = TipoComidaFragmentDirections.actionTipoComidaFragmentToComidaFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.btnMediterranea.setOnClickListener {
+            var action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaFragment()
+            findNavController().navigate(action)
+        }
     }
 
 }

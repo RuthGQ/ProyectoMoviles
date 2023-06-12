@@ -61,6 +61,21 @@
         <action
             android:id="@+id/action_menuFragment_to_principalFragment"
             app:destination="@id/principalFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_notificacionFragment"
+            app:destination="@id/notificacionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_direccionFragment"
+            app:destination="@id/direccionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_metodoFragment"
+            app:destination="@id/metodoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_preguntasFragment"
+            app:destination="@id/preguntasFragment" />
     </fragment>
     <fragment
         android:id="@+id/carritoFragment"
@@ -87,6 +102,55 @@
         <action
             android:id="@+id/action_comidaFragment_to_cantidadFragment"
             app:destination="@id/cantidadFragment" />
+        <action
+            android:id="@+id/action_comidaFragment_to_tipoComidaFragment"
+            app:destination="@id/tipoComidaFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/tipoComidaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.TipoComidaFragment"
+        android:label="fragment_tipo_comida"
+        tools:layout="@layout/fragment_tipo_comida" >
+        <action
+            android:id="@+id/action_tipoComidaFragment_to_cartaFragment"
+            app:destination="@id/cartaFragment" />
+        <action
+            android:id="@+id/action_tipoComidaFragment_to_comidaFragment"
+            app:destination="@id/comidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.CartaFragment"
+        android:label="fragment_carta"
+        tools:layout="@layout/fragment_carta" >
+        <action
+            android:id="@+id/action_cartaFragment_to_tipoComidaFragment"
+            app:destination="@id/tipoComidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/direccionFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.DireccionFragment"
+        android:label="fragment_direccion"
+        tools:layout="@layout/fragment_direccion" />
+    <fragment
+        android:id="@+id/metodoFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.MetodoFragment"
+        android:label="fragment_metodo"
+        tools:layout="@layout/fragment_metodo" />
+    <fragment
+        android:id="@+id/notificacionFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.NotificacionFragment"
+        android:label="fragment_notificacion"
+        tools:layout="@layout/fragment_notificacion" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/preguntasFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.PreguntasFragment"
+        android:label="fragment_preguntas"
+        tools:layout="@layout/fragment_preguntas" />
 
 </navigation>
