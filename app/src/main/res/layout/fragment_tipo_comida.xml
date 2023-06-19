@@ -11,35 +11,47 @@
         android:id="@+id/btn_regresar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="250dp"
         android:clickable="true"
         android:src="@drawable/baseline_keyboard_return_24"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="352dp"
         android:layout_height="45dp"
+        android:layout_marginTop="80dp"
         android:text="¿ Qué buscas comer ?"
         android:textSize="34sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="122dp" />
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="555dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="175dp"
-        tools:ignore="MissingConstraints">
+        android:id="@+id/constraintLayout9"
+        android:layout_width="320dp"
+        android:layout_height="519dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="132dp"
             android:layout_height="129dp"
+            android:layout_marginTop="50dp"
             app:cardCornerRadius="50dp"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="46dp" >
+            app:layout_constraintEnd_toStartOf="@+id/cardView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
                 android:id="@+id/btn_mediterranea"
@@ -49,11 +61,14 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
             android:layout_width="132dp"
             android:layout_height="129dp"
+            android:layout_marginTop="50dp"
             app:cardCornerRadius="50dp"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="46dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
                 android:id="@+id/btn_mexicana"
@@ -63,11 +78,15 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
             android:layout_width="132dp"
             android:layout_height="129dp"
+            android:layout_marginTop="80dp"
             app:cardCornerRadius="50dp"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="267dp">
+            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintEnd_toStartOf="@+id/cardView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
 
             <ImageButton
                 android:id="@+id/btn_italiana"
@@ -77,11 +96,16 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
             android:layout_width="132dp"
             android:layout_height="129dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="150dp"
             app:cardCornerRadius="50dp"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="267dp">
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView16">
 
             <ImageButton
                 android:id="@+id/btn_japonesa"
@@ -94,37 +118,44 @@
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:text="Mediterranea"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="175dp" />
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:text="Mexicana"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="253dp"
-            tools:layout_editor_absoluteY="175dp" />
+            app:layout_constraintStart_toStartOf="@+id/cardView3"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
         <TextView
             android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="20dp"
             android:text="Italiana"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="93dp"
-            tools:layout_editor_absoluteY="397dp" />
+            app:layout_constraintStart_toStartOf="@+id/cardView5"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:text="Japonesa"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="252dp"
-            tools:layout_editor_absoluteY="397dp" />
-
+            app:layout_constraintStart_toStartOf="@+id/cardView3"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
