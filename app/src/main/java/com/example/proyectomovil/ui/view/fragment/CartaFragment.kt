@@ -24,6 +24,6 @@ class CartaFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_carta, container, false)
     }
-
+    data class Food(val name: String, val description: String, val imageResId: Int)
 
 }
