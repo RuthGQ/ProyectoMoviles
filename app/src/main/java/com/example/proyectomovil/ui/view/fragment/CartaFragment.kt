@@ -7,12 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectomovil.R
+import com.example.proyectomovil.databinding.FragmentCartaBinding
 
 class CartaFragment : Fragment() {
 
+    private var _binding: FragmentCartaBinding? = null
+    private val binding get() = _binding!!
     private lateinit var recyclerView: RecyclerView
 
     override fun onCreateView(
@@ -31,6 +35,16 @@ class CartaFragment : Fragment() {
         recyclerView.adapter = foodAdapter
 
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Navegacion entre fragments
+        binding.btnRegresar4.setOnClickListener{
+            var action = CartaFragmentDirections.actionCartaFragmentToTipoComidaFragment()
+            findNavController().navigate(action)
+        }
     }
 
     private fun getFoodList(): List<Food> {
