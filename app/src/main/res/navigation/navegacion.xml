@@ -151,6 +151,6 @@
         android:id="@+id/preguntasFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.PreguntasFragment"
         android:label="fragment_preguntas"
-        tools:layout="@layout/fragment_preguntas" />
+        tools:layout="@layout/fragment_terms" />
 
 </navigation>
