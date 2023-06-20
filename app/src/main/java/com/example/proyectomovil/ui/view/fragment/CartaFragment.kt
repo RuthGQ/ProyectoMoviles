@@ -24,9 +24,10 @@ class CartaFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_carta, container, false)
+        _binding = FragmentCartaBinding.inflate(inflater, container, false)
+        val view = binding.root
 
-        recyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         val foodList = getFoodList()
@@ -36,7 +37,6 @@ class CartaFragment : Fragment() {
 
         return view
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -57,6 +57,10 @@ class CartaFragment : Fragment() {
             // Agrega más elementos de comida según sea necesario
         )
     }
+
+
+
+
 
     private inner class FoodAdapter(private val foodList: List<Food>) :
         RecyclerView.Adapter<FoodAdapter.FoodViewHolder>() {
@@ -87,4 +91,10 @@ class CartaFragment : Fragment() {
     }
 
     data class Food(val name: String, val description: String, val imageResId: Int)
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }
