@@ -126,7 +126,14 @@
         <action
             android:id="@+id/action_cartaFragment_to_tipoComidaFragment"
             app:destination="@id/tipoComidaFragment" />
+        <action
+            android:id="@+id/action_carta_to_pedido"
+            app:destination="@id/fragment_pedido" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_pedido"
+        android:name="com.example.proyectomovil.ui.view.fragment.FragmentPedido"
+        android:label="Fragment Pedido" />
     <fragment
         android:id="@+id/direccionFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.DireccionFragment"

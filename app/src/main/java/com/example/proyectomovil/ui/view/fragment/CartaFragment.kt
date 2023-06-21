@@ -7,11 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectomovil.R
 import com.example.proyectomovil.databinding.FragmentCartaBinding
+import com.example.proyectomovil.databinding.FragmentPedidoBinding
 
 class CartaFragment : Fragment() {
 
@@ -37,30 +39,26 @@ class CartaFragment : Fragment() {
 
         return view
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Navegacion entre fragments
-        binding.btnRegresar4.setOnClickListener{
-            var action = CartaFragmentDirections.actionCartaFragmentToTipoComidaFragment()
-            findNavController().navigate(action)
+        binding.btnRegresar4.setOnClickListener {
+            findNavController().navigate(R.id.action_cartaFragment_to_tipoComidaFragment)
+
         }
     }
 
     private fun getFoodList(): List<Food> {
         return listOf(
-            Food("Comida 1", "Descripción de la comida 1", R.drawable.almuerzo2),
+            Food("Lasagna de carne gratinada", "Descripción de la comida 1", R.drawable.almuerzo2),
             Food("Comida 2", "Descripción de la comida 2", R.drawable.almuerzo2),
             Food("Comida 3", "Descripción de la comida 3", R.drawable.almuerzo2),
             Food("Comida 4", "Descripción de la comida 4", R.drawable.almuerzo2),
-            Food("Comida 5", "Descripción de la comida 5", R.drawable.almuerzo2),
+            Food("Comida 5", "Descripción de la comida 5", R.drawable.almuerzo2)
             // Agrega más elementos de comida según sea necesario
         )
     }
-
-
-
-
 
     private inner class FoodAdapter(private val foodList: List<Food>) :
         RecyclerView.Adapter<FoodAdapter.FoodViewHolder>() {
@@ -77,6 +75,10 @@ class CartaFragment : Fragment() {
             holder.nameTextView.text = currentFood.name
             holder.descriptionTextView.text = currentFood.description
             holder.imageView.setImageResource(currentFood.imageResId)
+
+            holder.itemView.setOnClickListener {
+                findNavController().navigate(R.id.action_carta_to_pedido)
+            }
         }
 
         override fun getItemCount(): Int {
@@ -96,5 +98,4 @@ class CartaFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }
