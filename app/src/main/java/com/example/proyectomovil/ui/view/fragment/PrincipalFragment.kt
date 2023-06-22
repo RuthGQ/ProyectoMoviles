@@ -53,6 +53,19 @@ class PrincipalFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.btnCumple.setOnClickListener{
+            val action = PrincipalFragmentDirections.actionPrincipalFragmentToCantidadFragment()
+            findNavController().navigate(action)
+        }
+        binding.btnGraduacion.setOnClickListener {
+            val action = PrincipalFragmentDirections.actionPrincipalFragmentToCantidadFragment()
+            findNavController().navigate(action)
+        }
+        binding.btnOtro.setOnClickListener {
+            val action = PrincipalFragmentDirections.actionPrincipalFragmentToCantidadFragment()
+            findNavController().navigate(action)
+        }
+
 
 
     }
