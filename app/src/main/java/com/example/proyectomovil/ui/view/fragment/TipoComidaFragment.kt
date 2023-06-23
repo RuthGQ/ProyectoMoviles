@@ -39,6 +39,11 @@ class TipoComidaFragment : Fragment() {
             var action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaFragment(R.drawable.comida4)
             findNavController().navigate(action)
         }
+
+        binding.btnMexicana.setOnClickListener{
+            val action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaMexicanaFragment()
+            findNavController().navigate(action)
+        }
     }
     override fun onDestroyView() {
         super.onDestroyView()

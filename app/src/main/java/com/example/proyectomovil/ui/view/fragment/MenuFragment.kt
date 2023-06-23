@@ -29,7 +29,10 @@ class MenuFragment : Fragment() {
         binding.btnRegresarPrincipal.setOnClickListener {
             val action = MenuFragmentDirections.actionMenuFragmentToPrincipalFragment()
             findNavController().navigate(action)
-
+        }
+        binding.btnMetodoPago.setOnClickListener {
+            val action = MenuFragmentDirections.actionMenuFragmentToMetodoFragment()
+            findNavController().navigate(action)
         }
     }
 

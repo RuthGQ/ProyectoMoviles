@@ -117,6 +117,15 @@
         <action
             android:id="@+id/action_tipoComidaFragment_to_comidaFragment"
             app:destination="@id/comidaFragment" />
+        <action
+            android:id="@+id/action_tipoComidaFragment_to_cartaMexicanaFragment"
+            app:destination="@id/cartaMexicanaFragment" />
+        <action
+            android:id="@+id/action_tipoComidaFragment_to_cartaItalianaFragment"
+            app:destination="@id/cartaItalianaFragment" />
+        <action
+            android:id="@+id/action_tipoComidaFragment_to_cartaJaponesaFragment"
+            app:destination="@id/cartaJaponesaFragment" />
     </fragment>
     <fragment
         android:id="@+id/cartaFragment"
@@ -164,5 +173,32 @@
         android:name="com.example.proyectomovil.ui.view.fragment.PreguntasFragment"
         android:label="fragment_preguntas"
         tools:layout="@layout/fragment_terms" />
+    <fragment
+        android:id="@+id/cartaMexicanaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.CartaMexicanaFragment"
+        android:label="fragment_carta_mexicana"
+        tools:layout="@layout/fragment_carta_mexicana" >
+        <action
+            android:id="@+id/action_cartaMexicanaFragment_to_tipoComidaFragment"
+            app:destination="@id/tipoComidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartaItalianaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.CartaItalianaFragment"
+        android:label="fragment_carta_italiana"
+        tools:layout="@layout/fragment_carta_italiana" >
+        <action
+            android:id="@+id/action_cartaItalianaFragment_to_tipoComidaFragment"
+            app:destination="@id/tipoComidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartaJaponesaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.CartaJaponesaFragment"
+        android:label="fragment_carta_japonesa"
+        tools:layout="@layout/fragment_carta_japonesa" >
+        <action
+            android:id="@+id/action_cartaJaponesaFragment_to_tipoComidaFragment"
+            app:destination="@id/tipoComidaFragment" />
+    </fragment>
 
 </navigation>
