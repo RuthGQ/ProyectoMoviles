@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.proyectomovil.databinding.ActivityMainBinding
+import com.example.proyectomovil.ui.view.fragment.CartaFragment
 import com.google.android.material.navigation.NavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,13 +24,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    Log.i("Inicio","Empezandooo")
+        Log.i("Inicio", "Empezandooo")
 
-    binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
 
-    setContentView(binding.root)
-
-
+        setContentView(binding.root)
+    }}
 
         /*drawerLayout = findViewById(R.id.drawer_layout)
 
@@ -129,6 +129,3 @@ class MainActivity : AppCompatActivity() {
         }
 */
 
-}
-
-}

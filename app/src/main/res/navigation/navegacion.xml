@@ -129,21 +129,26 @@
         <action
             android:id="@+id/action_carta_to_pedido"
             app:destination="@id/fragment_pedido" />
+        <argument
+            android:name="imageResId"
+            app:argType="integer" />
+
     </fragment>
+
     <fragment
         android:id="@+id/fragment_pedido"
         android:name="com.example.proyectomovil.ui.view.fragment.FragmentPedido"
-        android:label="Fragment Pedido" />
+        android:label="@string/fragment_pedido_label" />
     <fragment
         android:id="@+id/direccionFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.DireccionFragment"
         android:label="fragment_direccion"
-        tools:layout="@layout/fragment_direccion" />
+        android:layout="@layout/fragment_direccion" />
     <fragment
         android:id="@+id/metodoFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.MetodoFragment"
         android:label="fragment_metodo"
-        tools:layout="@layout/fragment_metodo" />
+        android:layout="@layout/fragment_metodo" />
     <fragment
         android:id="@+id/notificacionFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.NotificacionFragment"

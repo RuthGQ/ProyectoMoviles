@@ -36,7 +36,7 @@ class TipoComidaFragment : Fragment() {
         }
 
         binding.btnMediterranea.setOnClickListener {
-            var action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaFragment()
+            var action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaFragment(R.drawable.comida4)
             findNavController().navigate(action)
         }
     }

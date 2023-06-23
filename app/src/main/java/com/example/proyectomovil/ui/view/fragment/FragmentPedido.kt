@@ -25,6 +25,19 @@ class FragmentPedido : Fragment() {
         return view
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val imageResId = arguments?.getInt("imageResId")
+
+        imageResId?.let {
+            binding.imageViewContent.setImageResource(it)
+        }
+
+        binding.buttonAction.setOnClickListener {
+            findNavController().navigate(R.id.cartaFragment)
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

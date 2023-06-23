@@ -15,15 +15,26 @@
         android:id="@+id/text_food_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
 
     <TextView
         android:id="@+id/text_food_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_marginTop="4dp" />
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+    <TextView
+        android:id="@+id/text_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"/>
 
 </LinearLayout>

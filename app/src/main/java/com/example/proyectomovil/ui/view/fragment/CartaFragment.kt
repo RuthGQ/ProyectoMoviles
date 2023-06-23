@@ -51,11 +51,24 @@ class CartaFragment : Fragment() {
 
     private fun getFoodList(): List<Food> {
         return listOf(
-            Food("Lasagna de carne gratinada", "Descripción de la comida 1", R.drawable.almuerzo2),
-            Food("Comida 2", "Descripción de la comida 2", R.drawable.almuerzo2),
-            Food("Comida 3", "Descripción de la comida 3", R.drawable.almuerzo2),
-            Food("Comida 4", "Descripción de la comida 4", R.drawable.almuerzo2),
-            Food("Comida 5", "Descripción de la comida 5", R.drawable.almuerzo2)
+            Food("Lasagna de carne gratinada", " plato de origen italiano " +
+                    "que consiste en capas de pasta de lasaña intercaladas con una mezcla " +
+                    "de carne molida, salsa de tomate, queso y hierbas aromáticas. ", R.drawable.comida1),
+            Food("Moussaka", " consiste en capas de berenjenas, carne picada de cordero o ternera," +
+                    " tomates, cebollas y especias, cubiertas con una bechamel y horneadas" +
+                    " hasta que estén doradas.", R.drawable.comida2),
+            Food("Ensalada griega", "Es una ensalada fresca y saludable que" +
+                    " combina tomates, pepinos, " +
+                    "cebolla roja, aceitunas, queso feta y aderezo de aceite de oliva " +
+                    "y limón", R.drawable.comida3),
+            Food("Paella", "Se prepara con arroz, pollo, conejo, mariscos, " +
+                    "verduras y especias como el azafrán." +
+                    " Es una comida colorida y aromática que representa la" +
+                    " esencia de la cocina" +
+                    " mediterránea", R.drawable.comida4),
+            Food("Tabulé", "Es una ensalada de origen libanés que se hace con" +
+                    " bulgur (trigo partido)" +
+                    ", tomate, perejil, menta, cebolla, aceite de oliva y jugo de limón. ", R.drawable.comida5)
             // Agrega más elementos de comida según sea necesario
         )
     }
@@ -75,10 +88,6 @@ class CartaFragment : Fragment() {
             holder.nameTextView.text = currentFood.name
             holder.descriptionTextView.text = currentFood.description
             holder.imageView.setImageResource(currentFood.imageResId)
-
-            holder.itemView.setOnClickListener {
-                findNavController().navigate(R.id.action_carta_to_pedido)
-            }
         }
 
         override fun getItemCount(): Int {
@@ -91,7 +100,6 @@ class CartaFragment : Fragment() {
             val imageView: ImageView = itemView.findViewById(R.id.image_food)
         }
     }
-
     data class Food(val name: String, val description: String, val imageResId: Int)
 
     override fun onDestroyView() {
