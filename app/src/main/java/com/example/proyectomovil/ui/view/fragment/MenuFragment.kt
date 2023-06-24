@@ -34,6 +34,10 @@ class MenuFragment : Fragment() {
             val action = MenuFragmentDirections.actionMenuFragmentToMetodoFragment()
             findNavController().navigate(action)
         }
+        binding.btnDireccion.setOnClickListener {
+            val action = MenuFragmentDirections.actionMenuFragmentToDireccionFragment()
+            findNavController().navigate(action)
+        }
     }
 
 }
