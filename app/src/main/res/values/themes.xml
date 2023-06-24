@@ -36,6 +36,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="fab_3_rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
     <style name="Theme.ProyectoMovil.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ProyectoMovil.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

@@ -7,31 +7,27 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.proyectomovil.R
-import com.example.proyectomovil.databinding.FragmentMetodoBinding
+import com.example.proyectomovil.databinding.FragmentComidaBinding
+import com.example.proyectomovil.databinding.FragmentTarjetaBinding
 
-class MetodoFragment : Fragment() {
+class TarjetaFragment : Fragment() {
 
-    private var _binding : FragmentMetodoBinding? = null
-    private val binding get() = _binding!!
+    private var _binding : FragmentTarjetaBinding? = null
+    private val binding get()= _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMetodoBinding.inflate(inflater, container, false)
+        _binding = FragmentTarjetaBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnRegresarMenu.setOnClickListener {
-            val action = MetodoFragmentDirections.actionMetodoFragmentToMenuFragment()
-            findNavController().navigate(action)
-        }
-
-        binding.btnTarjeta.setOnClickListener {
-            val action = MetodoFragmentDirections.actionMetodoFragmentToTarjetaFragment()
+        binding.fabAgregartarjeta.setOnClickListener {
+            val action = TarjetaFragmentDirections.actionTarjetaFragmentToAgregarTarjetaFragment()
             findNavController().navigate(action)
         }
     }
