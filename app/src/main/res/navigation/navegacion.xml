@@ -152,7 +152,16 @@
         android:id="@+id/direccionFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.DireccionFragment"
         android:label="fragment_direccion"
-        android:layout="@layout/fragment_direccion" />
+        android:layout="@layout/fragment_direccion" >
+        <action
+            android:id="@+id/action_direccionFragment_to_direccionRegistrarFragment"
+            app:destination="@id/direccionRegistrarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/direccionRegistrarFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.DireccionRegistrarFragment"
+        android:label="fragment_direccion_registrar"
+        android:layout="@layout/fragment_direccion_registrar" />
     <fragment
         android:id="@+id/metodoFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.MetodoFragment"
@@ -200,5 +209,4 @@
             android:id="@+id/action_cartaJaponesaFragment_to_tipoComidaFragment"
             app:destination="@id/tipoComidaFragment" />
     </fragment>
-
 </navigation>
