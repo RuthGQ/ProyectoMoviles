@@ -161,7 +161,11 @@
         android:id="@+id/direccionRegistrarFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.DireccionRegistrarFragment"
         android:label="fragment_direccion_registrar"
-        android:layout="@layout/fragment_direccion_registrar" />
+        android:layout="@layout/fragment_direccion_registrar" >
+        <action
+            android:id="@+id/action_direccionRegistrarFragment_to_direccionFragment"
+            app:destination="@id/direccionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/metodoFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.MetodoFragment"
