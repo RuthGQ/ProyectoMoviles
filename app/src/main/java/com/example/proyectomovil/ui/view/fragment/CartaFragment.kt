@@ -102,6 +102,8 @@ class CartaFragment : Fragment() {
     }
     data class Food(val name: String, val description: String, val imageResId: Int)
 
+    data class Direccion(val name: String, val description: String, val provincia: String)
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
