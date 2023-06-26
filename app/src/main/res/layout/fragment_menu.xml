@@ -143,12 +143,12 @@
             android:background="#00FFFFFF"
             android:text="Notificaciones"
             android:textColor="#E60909"
-            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintBottom_toTopOf="@+id/btn_terms"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_terms"
             android:layout_width="357dp"
             android:layout_height="43dp"
             android:layout_marginStart="31dp"

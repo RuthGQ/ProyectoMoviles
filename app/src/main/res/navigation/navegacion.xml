@@ -76,6 +76,9 @@
         <action
             android:id="@+id/action_menuFragment_to_metodoFragment"
             app:destination="@id/metodoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_termsFragment"
+            app:destination="@id/termsFragment" />
     </fragment>
     <fragment
         android:id="@+id/carritoFragment"
@@ -259,4 +262,9 @@
             app:argType="string" />
 
     </fragment>
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.TermsFragment"
+        android:label="fragment_terms"
+        tools:layout="@layout/fragment_terms" />
 </navigation>
