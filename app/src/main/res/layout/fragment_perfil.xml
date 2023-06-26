@@ -6,35 +6,42 @@
     android:orientation="vertical"
     tools:context=".ui.view.fragment.PerfilFragment">
 
-    <include layout="@layout/toolbar"/>
+    <Button
+        android:id="@+id/btn_cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesion" />
+
+    <include layout="@layout/toolbar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="15dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="15dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ImgPerfil"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:src="@drawable/perfil"/>
-        
+            android:src="@drawable/perfil" />
+
         <TextView
+            android:id="@+id/txtNombreApellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Valery Torres"
             android:textColor="@color/purple_500"
             android:textSize="20dp"
-            android:layout_marginTop="8dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/purple_500"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:background="@color/purple_500" />
 
     </LinearLayout>
 
@@ -63,12 +70,13 @@
             android:layout_marginLeft="5dp"/>
 
         <TextView
+            android:id="@+id/txtNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Valery"
             android:layout_marginLeft="35dp"
-            android:textSize="18dp"
-            android:textColor="@color/black"/>
+            android:text="Valery"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -103,12 +111,13 @@
             android:layout_marginLeft="5dp"/>
 
         <TextView
+            android:id="@+id/txtApellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Torres"
             android:layout_marginLeft="35dp"
-            android:textSize="18dp"
-            android:textColor="@color/black"/>
+            android:text="Torres"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -143,12 +152,13 @@
             android:layout_marginLeft="5dp"/>
 
         <TextView
+            android:id="@+id/txtCorreo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="valery@gmail.com"
             android:layout_marginLeft="55dp"
-            android:textSize="18dp"
-            android:textColor="@color/black"/>
+            android:text="valery@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -183,12 +193,13 @@
             android:layout_marginLeft="5dp"/>
 
         <TextView
+            android:id="@+id/txtTelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="950462777"
             android:layout_marginLeft="35dp"
-            android:textSize="18dp"
-            android:textColor="@color/black"/>
+            android:text="950462777"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -223,12 +234,13 @@
             android:layout_marginLeft="5dp"/>
 
         <TextView
+            android:id="@+id/txtUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="val12"
             android:layout_marginLeft="50dp"
-            android:textSize="18dp"
-            android:textColor="@color/black"/>
+            android:text="val12"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -263,12 +275,13 @@
             android:layout_marginLeft="5dp"/>
 
         <TextView
+            android:id="@+id/txtClave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="****"
             android:layout_marginLeft="19dp"
-            android:textSize="18dp"
-            android:textColor="@color/black"/>
+            android:text="****"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
 
     </LinearLayout>
 

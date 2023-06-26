@@ -1,6 +1,7 @@
 package com.example.proyectomovil.repository
 
 import android.util.Log
+import androidx.lifecycle.LiveData
 import com.example.proyectomovil.entity.UsuarioEntity
 import com.example.proyectomovil.room.Resultado
 import com.example.proyectomovil.room.dao.UsuarioDao
@@ -32,6 +33,10 @@ class UsuarioRepository (val usuaDao: UsuarioDao){
         }catch (e : Throwable){
             Resultado.Error(Exception("Error en el login", e))
         }
+    }
+
+    fun obtenerUsuario(id:Int) : UsuarioEntity {
+        return usuaDao.obtenerUsuarioPorId(id)
     }
 
 }

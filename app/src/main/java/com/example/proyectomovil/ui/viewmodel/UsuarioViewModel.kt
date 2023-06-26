@@ -15,6 +15,10 @@ import kotlinx.coroutines.launch
 //@HiltViewModel
 class UsuarioViewModel(private var repository: UsuarioRepository):ViewModel() {
 
+    private var _usuarioXid: MutableLiveData<UsuarioEntity> = MutableLiveData<UsuarioEntity>()
+
+    val usuarioXid : LiveData<UsuarioEntity> = _usuarioXid
+
     val usuarios: LiveData<List<UsuarioEntity>> = repository.listaUsuario.asLiveData()
 
     private var _loginResult = MutableLiveData<LoginResult>()
@@ -49,6 +53,13 @@ class UsuarioViewModel(private var repository: UsuarioRepository):ViewModel() {
                 _loginResult.value = LoginResult(error = 0)
             }
 
+        }
+    }
+
+    fun obtenerUsuarioXid(id:String){
+        viewModelScope.launch {
+            Log.i("asdf",id)
+            _usuarioXid.value = repository.obtenerUsuario(id.toInt())
         }
     }
 }

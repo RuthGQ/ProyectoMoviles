@@ -72,20 +72,7 @@ class LoginFragment : Fragment() {
         }
 
 
-        activityViewModel.getStatus()
-        activityViewModel.onSession.observe(viewLifecycleOwner){
-            usuarioViewModel.usuarios.observe(viewLifecycleOwner){usuario->
-                if (usuario.isNotEmpty()){
-                    if (it){
-                        findNavController().navigate(R.id.action_loginFragment_to_principalFragment)
-                    }
-                }else{
-                    activityViewModel.clearData()
-                }
 
-
-            }
-        }
 
         binding.btnRegistrarLogin.setOnClickListener {
 

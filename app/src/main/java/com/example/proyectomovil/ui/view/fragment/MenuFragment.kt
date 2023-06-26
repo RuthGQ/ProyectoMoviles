@@ -30,6 +30,10 @@ class MenuFragment : Fragment() {
             val action = MenuFragmentDirections.actionMenuFragmentToPrincipalFragment()
             findNavController().navigate(action)
         }
+        binding.btnPerfil.setOnClickListener {
+            val action = MenuFragmentDirections.actionMenuFragmentToPerfilFragment()
+            findNavController().navigate(action)
+        }
         binding.btnMetodoPago.setOnClickListener {
             val action = MenuFragmentDirections.actionMenuFragmentToMetodoFragment()
             findNavController().navigate(action)

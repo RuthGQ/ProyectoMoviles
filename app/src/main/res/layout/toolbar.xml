@@ -27,14 +27,16 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:gravity="center"/>
+
         <TextView
+            android:id="@+id/btn_cerrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:text="Cerrar sesion"
             android:textColor="@color/purple_200"
-            android:layout_alignParentRight="true"
-            android:textStyle="normal"
-            android:textSize="18dp"/>
+            android:textSize="18dp"
+            android:textStyle="normal" />
         
     </LinearLayout>
     

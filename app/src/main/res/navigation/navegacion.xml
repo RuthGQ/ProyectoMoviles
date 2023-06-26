@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_inicioFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -73,9 +76,6 @@
         <action
             android:id="@+id/action_menuFragment_to_metodoFragment"
             app:destination="@id/metodoFragment" />
-        <action
-            android:id="@+id/action_menuFragment_to_preguntasFragment"
-            app:destination="@id/preguntasFragment" />
     </fragment>
     <fragment
         android:id="@+id/carritoFragment"
@@ -187,12 +187,14 @@
         android:id="@+id/perfilFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.PerfilFragment"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
-    <fragment
-        android:id="@+id/preguntasFragment"
-        android:name="com.example.proyectomovil.ui.view.fragment.PreguntasFragment"
-        android:label="fragment_preguntas"
-        tools:layout="@layout/fragment_terms" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cartaMexicanaFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.CartaMexicanaFragment"

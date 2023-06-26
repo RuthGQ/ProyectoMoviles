@@ -17,6 +17,9 @@ interface UsuarioDao {
     @Query("SELECT * FROM tb_usuario where usuario = :user and claveUsu= :clave")
     suspend fun obtenerUsuarioPorUseryClave(user: String, clave: String) : UsuarioEntity
 
+    @Query("SELECT * FROM tb_usuario where id = :id")
+    fun obtenerUsuarioPorId(id: Int) : UsuarioEntity
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(usuario: UsuarioEntity)
 
