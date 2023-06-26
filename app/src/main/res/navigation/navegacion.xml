@@ -231,6 +231,9 @@
         <action
             android:id="@+id/action_tarjetaFragment_to_metodoFragment"
             app:destination="@id/metodoFragment" />
+        <action
+            android:id="@+id/action_tarjetaFragment_to_mtmTarjetaFragment"
+            app:destination="@id/mtmTarjetaFragment" />
     </fragment>
     <fragment
         android:id="@+id/agregarTarjetaFragment"
@@ -240,5 +243,18 @@
         <action
             android:id="@+id/action_agregarTarjetaFragment_to_tarjetaFragment"
             app:destination="@id/tarjetaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mtmTarjetaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.MtmTarjetaFragment"
+        android:label="fragment_mtm_tarjeta"
+        tools:layout="@layout/fragment_mtm_tarjeta" >
+        <action
+            android:id="@+id/action_mtmTarjetaFragment_to_tarjetaFragment"
+            app:destination="@id/tarjetaFragment" />
+        <argument
+            android:name="iduser"
+            app:argType="string" />
+
     </fragment>
 </navigation>

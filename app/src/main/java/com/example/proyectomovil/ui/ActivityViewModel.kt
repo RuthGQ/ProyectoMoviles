@@ -9,7 +9,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 //@HiltViewModel
-class ActivityViewModel @Inject constructor() : ViewModel() {
+class ActivityViewModel : ViewModel() {
 
     private val _onSession = MutableLiveData<Boolean>()
     val onSession: LiveData<Boolean> = _onSession
