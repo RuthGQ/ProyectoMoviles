@@ -49,37 +49,92 @@ class CartaMexicanaFragment : Fragment() {
     private fun getFoodList(): List<CartaFragment.Food> {
         return listOf(
             CartaFragment.Food(
-                "Pruebaa",
-                " plato de origen italiano " +
-                        "que consiste en capas de pasta de lasaña intercaladas con una mezcla " +
-                        "de carne molida, salsa de tomate, queso y hierbas aromáticas. ",
-                R.drawable.comida1
+                "Burrito U",
+                "Un burrito con 1 carne a elección + nachos\n" +
+                        "chips + 2 salsas + gaseosa persona",
+                R.drawable.comidamex1
             ),
             CartaFragment.Food(
-                "Moussaka", " consiste en capas de berenjenas, carne picada de cordero o ternera," +
-                        " tomates, cebollas y especias, cubiertas con una bechamel y horneadas" +
-                        " hasta que estén doradas.", R.drawable.comida2
+                "Burrito XT", "Un burrito doble carne a elección + nachos\n" +
+                        "chips + 2 salsas + gaseosa personal", R.drawable.comidamex2
             ),
             CartaFragment.Food(
-                "Ensalada griega", "Es una ensalada fresca y saludable que" +
-                        " combina tomates, pepinos, " +
-                        "cebolla roja, aceitunas, queso feta y aderezo de aceite de oliva " +
-                        "y limón", R.drawable.comida3
+                "Tacos Tex Mex", "3 Tacos Tex Mex con 1 carne a elección con\n" +
+                        "crema de frijol + guacamole + queso edam +\n" +
+                        "crema agria + pico gallo + cilantro + Nacho\n" +
+                        "chips + dos salsas + gaseosa personal", R.drawable.comidamex3
             ),
             CartaFragment.Food(
-                "Paella", "Se prepara con arroz, pollo, conejo, mariscos, " +
-                        "verduras y especias como el azafrán." +
-                        " Es una comida colorida y aromática que representa la" +
-                        " esencia de la cocina" +
-                        " mediterránea", R.drawable.comida4
+                "Bowl Chingon",
+                "Un bowl con base de arroz mexicano + 2\n" +
+                        "carnes a elección + nacho chips + 2 salsas +\n" +
+                        "gaseosa persona",
+                R.drawable.comidamex4
             ),
             CartaFragment.Food(
-                "Tabulé",
-                "Es una ensalada de origen libanés que se hace con" +
-                        " bulgur (trigo partido)" +
-                        ", tomate, perejil, menta, cebolla, aceite de oliva y jugo de limón. ",
-                R.drawable.comida5
+                "Fiesta de tacos",
+                "Tortillas para tacos: 4 de maiz y 4 de trigo +\n" +
+                        "nacho chips + 2 tipos de carne a elección + 6\n" +
+                        "salsas y toppings.",
+                R.drawable.comidamex5
+            ),
+            CartaFragment.Food(
+                "Antojitos",
+                "4 flautas de queso + 4 quesadillas tex-mtex\n" +
+                        "de carne molida +\n" +
+                        "3 quesadillas mex de pollo asado + 3 grin-\n" +
+                        "gas al pastor + nachos chips + 1 tipo de\n" +
+                        "carne a elección + 6 salsas y toppings.",
+                R.drawable.comidamex6
+            ),
+            CartaFragment.Food(
+                "Chingona",
+                "Tortillas para tacos: 4 de maíz y 4 de trigo +\n" +
+                        "nachos chips + 3 flautas de queso + 4 quesa-\n" +
+                        "dillas tex-mex de carne molida + 3 quesadi-\n" +
+                        "llas mex de pollo asado + 2 tipo de carnes a\n" +
+                        "elección+ +6 salsas y toppings.",
+                R.drawable.comidamex7
+            ),
+            CartaFragment.Food(
+                "El capo",
+                "8 tortillas de maíz + pollo al mole poblano +\n" +
+                        "birria de res + 2 costras de pastor + queso\n" +
+                        "edam + 3 flautas de queso + 2 quesadillas\n" +
+                        "mex de pollo + 4 queadillas tex de gorund\n" +
+                        "beef + nachos chips + 6 salsas y toppings.",
+                R.drawable.comidamex8
+            ),
+            CartaFragment.Food(
+                "Los carnales",
+                "Tortillas para tacos: 8 de maíz y 8 de trigo +\n" +
+                        "nachos chips+ 4 tipos de cane a elección + 6\n" +
+                        "salsas y topping.",
+                R.drawable.comidamex9
+            ),
+            CartaFragment.Food(
+                "Gran taquería",
+                "Tortillas para tacos: 8 de maíz y 8 de trigo +\n" +
+                        "nachos chips + 3 flautas de queso + 4 quesa-\n" +
+                        "dillas tex-mex de carness a elección + 3 que-\n" +
+                        "sadillas de mex de pollo asado + 4 tipos de\n" +
+                        "carnes a elección + 6 salsas y toppings.",
+                R.drawable.comidamex10
+            ),
+            CartaFragment.Food(
+                "El patron",
+                "3 flautas de queso + 4 quesadillas tex de\n" +
+                        "carne molida + 3 quesadillas mex de pollo\n" +
+                        "asado + 3 gringas al pastor + 3 enchiladas\n" +
+                        "de barbacoa de res (salsa chipotle picante\n" +
+                        "medio) + nacho tex de carne molida + 3 tos-\n" +
+                        "tadas de maíz + tortillas para tacos: 8 de\n" +
+                        "maiz y 8 de trigo + 4 tipos de carne a elec-\n" +
+                        "ción + 6 salsas y topping.",
+                R.drawable.comidamex11
             )
+
+
             // Agrega más elementos de comida según sea necesario
         )
     }
