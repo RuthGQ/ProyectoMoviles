@@ -44,6 +44,16 @@ class TipoComidaFragment : Fragment() {
             val action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaMexicanaFragment()
             findNavController().navigate(action)
         }
+
+        binding.btnItaliana.setOnClickListener{
+            val action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaItalianaFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.btnJaponesa.setOnClickListener{
+            val action = TipoComidaFragmentDirections.actionTipoComidaFragmentToCartaJaponesaFragment()
+            findNavController().navigate(action)
+        }
     }
     override fun onDestroyView() {
         super.onDestroyView()

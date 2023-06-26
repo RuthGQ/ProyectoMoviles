@@ -63,7 +63,10 @@
     <string name="agregar_metodo_pago">Agregar método de pago</string>
     <string name="tarjeta_credito_debito">Tarjeta de Credito o Débito</string>
     <string name="paypal">Paypal</string>
-    <string name="button">Button</string>
+
+    <!-- Strings usados en el fragment perfil -->
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="editar_contraseña">Cambiar Contraseña</string>
 
 
     <string name="agregar">Agregar</string>

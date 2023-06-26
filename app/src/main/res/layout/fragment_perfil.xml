@@ -16,6 +16,7 @@
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImgPerfil"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:src="@drawable/perfil"/>
@@ -36,7 +37,8 @@
             android:layout_marginTop="10dp"/>
 
     </LinearLayout>
-    
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombres"
+            android:text="@string/nombre"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -64,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Valery"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="35dp"
             android:textSize="18dp"
             android:textColor="@color/black"/>
 
@@ -72,11 +74,10 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:background="@color/purple_200"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginLeft="15dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,7 +96,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apellidos"
+            android:text="@string/apellido"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -105,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Torres"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="35dp"
             android:textSize="18dp"
             android:textColor="@color/black"/>
 
@@ -113,11 +114,50 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:background="@color/purple_200"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_email_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correo"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valery@gmail.com"
+            android:layout_marginLeft="55dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -131,12 +171,12 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/ic_email_1"/>
+            android:src="@drawable/bg_call"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="@string/telefono"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -145,8 +185,48 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="valery@gmail.com"
-            android:layout_marginLeft="70dp"
+            android:text="950462777"
+            android:layout_marginLeft="35dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_person"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="val12"
+            android:layout_marginLeft="50dp"
             android:textSize="18dp"
             android:textColor="@color/black"/>
 
@@ -162,16 +242,79 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_password_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****"
+            android:layout_marginLeft="19dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/EditarPerfil"
             android:layout_width="180dp"
             android:layout_height="50dp"
             android:background="@drawable/bg_btn"
-            android:text="Editar Perfil"
+            android:text="@string/editar_perfil"
             android:gravity="center"
+            android:textColor="@color/purple_200"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_edit"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/EditarPass"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/editar_contraseña"
+            android:gravity="center_horizontal"
             android:textColor="@color/purple_200"
             android:textSize="18dp"
             android:drawableLeft="@drawable/ic_edit"
