@@ -1,48 +1,43 @@
 package com.example.proyectomovil.ui.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.example.proyectomovil.ProjectApplication
 import com.example.proyectomovil.R
 import com.example.proyectomovil.databinding.FragmentRegisterBinding
 import com.example.proyectomovil.entity.UsuarioEntity
+import com.example.proyectomovil.prefs
 import com.example.proyectomovil.ui.ActivityViewModel
 import com.example.proyectomovil.ui.viewmodel.UsuarioViewModel
+import com.example.proyectomovil.ui.viewmodel.ViewModelFactory
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 //@AndroidEntryPoint
 class RegisterFragment : Fragment() {
 
-    private var param1: String? = null
-    private var param2: String? = null
 
     private var _binding : FragmentRegisterBinding? = null
     private val binding get()= _binding!!
 
-    private val usuarioViewModel by viewModels<UsuarioViewModel>()
-    private val activityViewModel by viewModels<ActivityViewModel>()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+    private val usuarioViewModel by viewModels<UsuarioViewModel>{
+        val app = requireActivity().application as ProjectApplication
+        ViewModelFactory(usuarioRepository = app.usuarioDBRepository)
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-      // Log.i("TAGs", prefs.stringPref.toString())
+        Log.i("TAGs", prefs.stringPref.toString())
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -135,11 +130,12 @@ class RegisterFragment : Fragment() {
 
             print("ahora squiii")
 
-            val usuario = UsuarioEntity(id, nombre, apellido, correo, telefono, user = user, clave = clave)
+            val usuario = UsuarioEntity(nombre = nombre, apellido = apellido, correo = correo, telefono = telefono, user = user, clave = clave)
 
+            usuarioViewModel.agregar(usuario)
             findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
 
-            print(usuario)
+            Log.i("Mensaje", "$nombre, $apellido, $correo, $telefono, $user, $clave")
 
         }
 
@@ -149,19 +145,6 @@ class RegisterFragment : Fragment() {
             val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
             findNavController().navigate(action)
         }
-    }
-
-
-    companion object {
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            RegisterFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
     }
 
 }

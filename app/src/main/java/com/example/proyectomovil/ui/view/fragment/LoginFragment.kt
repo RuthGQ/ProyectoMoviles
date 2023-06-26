@@ -7,19 +7,30 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.example.proyectomovil.ProjectApplication
+import com.example.proyectomovil.R
 import com.example.proyectomovil.databinding.FragmentLoginBinding
 import com.example.proyectomovil.ui.ActivityViewModel
 import com.example.proyectomovil.ui.viewmodel.UsuarioViewModel
+import com.example.proyectomovil.ui.viewmodel.ViewModelFactory
 
 //@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
-    private val usuarioViewModel by viewModels<UsuarioViewModel>()
-    private val activityViewModel by viewModels<ActivityViewModel>()
+
 
     private var _binding : FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
+
+    private val usuarioViewModel by viewModels<UsuarioViewModel>{
+        val app = requireActivity().application as ProjectApplication
+        ViewModelFactory(usuarioRepository = app.usuarioDBRepository)
+    }
+    private val activityViewModel by viewModels<ActivityViewModel>{
+        val app = requireActivity().application as ProjectApplication
+        ViewModelFactory()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,16 +51,14 @@ class LoginFragment : Fragment() {
         val login = binding.btnIngresarLogin
 
         login.setOnClickListener {
-            /*usuarioViewModel.login(
+            usuarioViewModel.login(
                 username.editText?.text.toString(),
                 password.editText?.text.toString()
-            )*/
-            val action = LoginFragmentDirections.actionLoginFragmentToPrincipalFragment()
-            findNavController().navigate(action)
+            )
         }
-        /*
+
         usuarioViewModel.loginResult.observe(viewLifecycleOwner){
-        val loginResult = it ?:return@observe
+        val loginResult = it ?: return@observe
 
             if (loginResult.error != null){
                 return@observe
@@ -60,9 +69,9 @@ class LoginFragment : Fragment() {
             }
 
 
-        }*/
+        }
 
-        /*
+
         activityViewModel.getStatus()
         activityViewModel.onSession.observe(viewLifecycleOwner){
             usuarioViewModel.usuarios.observe(viewLifecycleOwner){usuario->
@@ -76,7 +85,7 @@ class LoginFragment : Fragment() {
 
 
             }
-        }*/
+        }
 
         binding.btnRegistrarLogin.setOnClickListener {
 

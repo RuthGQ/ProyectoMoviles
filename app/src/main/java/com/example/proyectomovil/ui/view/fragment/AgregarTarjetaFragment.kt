@@ -24,7 +24,7 @@ class AgregarTarjetaFragment : Fragment() {
 
     val tarjetaViewModel by viewModels<TarjetaViewModel> {
         val app = requireActivity().application as ProjectApplication
-        ViewModelFactory(app.tarjetaDBRepository)
+        ViewModelFactory(tarjetaRepository = app.tarjetaDBRepository)
     }
 
     override fun onCreateView(
