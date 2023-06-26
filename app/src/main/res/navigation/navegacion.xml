@@ -161,12 +161,23 @@
         android:id="@+id/direccionRegistrarFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.DireccionRegistrarFragment"
         android:label="fragment_direccion_registrar"
-        android:layout="@layout/fragment_direccion_registrar" />
+        android:layout="@layout/fragment_direccion_registrar" >
+        <action
+            android:id="@+id/action_direccionRegistrarFragment_to_direccionFragment"
+            app:destination="@id/direccionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/metodoFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.MetodoFragment"
         android:label="fragment_metodo"
-        android:layout="@layout/fragment_metodo" />
+        android:layout="@layout/fragment_metodo" >
+        <action
+            android:id="@+id/action_metodoFragment_to_tarjetaFragment"
+            app:destination="@id/tarjetaFragment" />
+        <action
+            android:id="@+id/action_metodoFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/notificacionFragment"
         android:name="com.example.proyectomovil.ui.view.fragment.NotificacionFragment"
@@ -208,5 +219,26 @@
         <action
             android:id="@+id/action_cartaJaponesaFragment_to_tipoComidaFragment"
             app:destination="@id/tipoComidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tarjetaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.TarjetaFragment"
+        android:label="fragment_tarjeta"
+        tools:layout="@layout/fragment_tarjeta" >
+        <action
+            android:id="@+id/action_tarjetaFragment_to_agregarTarjetaFragment"
+            app:destination="@id/agregarTarjetaFragment" />
+        <action
+            android:id="@+id/action_tarjetaFragment_to_metodoFragment"
+            app:destination="@id/metodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarTarjetaFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.AgregarTarjetaFragment"
+        android:label="fragment_agregar_tarjeta"
+        tools:layout="@layout/fragment_agregar_tarjeta" >
+        <action
+            android:id="@+id/action_agregarTarjetaFragment_to_tarjetaFragment"
+            app:destination="@id/tarjetaFragment" />
     </fragment>
 </navigation>

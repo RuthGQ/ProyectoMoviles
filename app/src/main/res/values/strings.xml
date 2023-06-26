@@ -68,4 +68,10 @@
     <string name="editar_perfil">Editar Perfil</string>
     <string name="editar_contraseña">Cambiar Contraseña</string>
 
+
+    <string name="agregar">Agregar</string>
+    <string name="agregar_tarjeta">Agregar tarjeta</string>
+    <string name="hint">hint</string>
+    <string name="todo">TODO</string>
+
 </resources>
