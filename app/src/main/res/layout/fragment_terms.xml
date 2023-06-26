@@ -24,7 +24,7 @@
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="@string/terminos_condiciones"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -39,6 +39,105 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
 
+            <TextView
+                android:id="@+id/tituloDos"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/definiciones_estructura"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/parrafoDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/definiciones"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tituloTres"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/object"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/parrafoTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/objeto"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/titulocuatro"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/usos"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/parrafoCuatro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/usos_plataforma"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/titulocinco"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/pagos"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/parrafoCinco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pagos_tarifas"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tituloseis"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/declaraciones"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/parraSeis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/declaraciones_garantias"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
         </LinearLayout>
         
     </androidx.cardview.widget.CardView>
