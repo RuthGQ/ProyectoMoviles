@@ -68,7 +68,10 @@
 
     <string name="agregar">Agregar</string>
     <string name="agregar_tarjeta">Agregar tarjeta</string>
-    <string name="hint">hint</string>
+    <string name="nombre_propietario">Nombre Propietario</string>
+    <string name="numero_tarjeta">Número de tarjeta</string>
+    <string name="cvv">CVV</string>
+    <string name="fecha_vencimiento">Fecha de Vencimiento</string>
     <string name="todo">TODO</string>
 
 </resources>

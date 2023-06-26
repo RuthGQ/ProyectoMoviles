@@ -1,6 +1,9 @@
 package com.example.proyectomovil
 
 import android.app.Application
+import com.example.proyectomovil.repository.TarjetaRepository
+import com.example.proyectomovil.repository.UsuarioRepository
+import com.example.proyectomovil.room.AlmacenDatabase
 import com.example.proyectomovil.room.module.Preferencias
 import dagger.hilt.android.HiltAndroidApp
 
@@ -19,4 +22,7 @@ class ProjectApplication :  Application(){
         prefs = Preferencias(applicationContext)
     }
 
+    val database by lazy { AlmacenDatabase.getInstance(this) }
+    val usuarioDBRepository by lazy {UsuarioRepository(database.usuarioDAO())}
+    val tarjetaDBRepository by lazy { TarjetaRepository(database.tarjetaDAO()) }
 }
