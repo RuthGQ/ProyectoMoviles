@@ -74,8 +74,8 @@
             android:id="@+id/action_menuFragment_to_metodoFragment"
             app:destination="@id/metodoFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_preguntasFragment"
-            app:destination="@id/preguntasFragment" />
+            android:id="@+id/action_menuFragment_to_termsFragment"
+            app:destination="@id/action_menuFragment_to_termsFragment" />
     </fragment>
     <fragment
         android:id="@+id/carritoFragment"
@@ -190,7 +190,7 @@
         tools:layout="@layout/fragment_perfil" />
     <fragment
         android:id="@+id/preguntasFragment"
-        android:name="com.example.proyectomovil.ui.view.fragment.PreguntasFragment"
+        android:name="com.example.proyectomovil.ui.view.fragment.TermsFragment"
         android:label="fragment_preguntas"
         tools:layout="@layout/fragment_terms" />
     <fragment
